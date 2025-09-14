@@ -40,3 +40,4 @@ echo "GSETTINGS_BACKEND=keyfile" >> ./AppDir/.env
 wget --retry-connrefused --tries=30 "$URUNTIME" -O ./uruntime2appimage
 chmod +x ./uruntime2appimage
 ./uruntime2appimage
+mv -v ~/version      ./dist
