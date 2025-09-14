@@ -20,9 +20,14 @@ pacman -Syu --noconfirm \
 echo "Installing the app & it's dependencies..."
 echo "---------------------------------------------------------------"
 # Install optional dependencies for enchant, as it's not automatically installed at the moment
-pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 pacman -Syu --noconfirm \
-	gnome-text-editor
+	gnome-text-editor \
+    enchant \
+	aspell \
+    hspell \
+	hunspell \
+    libvoikko \
+	nuspell
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
