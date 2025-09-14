@@ -20,7 +20,8 @@ pacman -Syu --noconfirm \
 echo "Installing the app & it's dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-	gnome-text-editor
+	gnome-text-editor \
+    libvoikko
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
