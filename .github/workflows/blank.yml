@@ -65,6 +65,7 @@ jobs:
           make_latest: true
           files: |
             *.AppImage*
+            *.AppBundle*
 
       - uses: actions/checkout@v4
       - name: Update LATEST_VERSION
