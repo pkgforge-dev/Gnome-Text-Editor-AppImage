@@ -19,9 +19,10 @@ pacman -Syu --noconfirm \
 	zsync
 echo "Installing the app & it's dependencies..."
 echo "---------------------------------------------------------------"
+# Install optional dependencies for enchant, as it's not automatically installed at the moment
+pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 pacman -Syu --noconfirm \
-	gnome-text-editor \
-    libvoikko
+	gnome-text-editor
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
