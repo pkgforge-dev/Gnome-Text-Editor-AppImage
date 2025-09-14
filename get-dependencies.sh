@@ -2,8 +2,6 @@
 
 set -eux
 
-sed -i 's/DownloadUser/#DownloadUser/g' /etc/pacman.conf
-
 DEBLOATED_PKGS_INSTALLER="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/get-debloated-pkgs.sh"
 
 echo "Installing build dependencies for sharun & AppImage integration..."
@@ -16,18 +14,14 @@ pacman -Syu --noconfirm \
 	libxtst \
 	wget \
 	xorg-server-xvfb \
-	zsync
+	zsync \
+    expac
 echo "Installing the app & it's dependencies..."
 echo "---------------------------------------------------------------"
-# Install optional dependencies for enchant, as it's not automatically installed at the moment
 pacman -Syu --noconfirm \
-	gnome-text-editor \
-    enchant \
-	aspell \
-    hspell \
-	hunspell \
-    libvoikko \
-	nuspell
+	gnome-text-editor
+echo "Install optional dependencies for 'enchant' spelling library automatically"
+pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
