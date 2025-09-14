@@ -21,7 +21,7 @@ export STARTUPWMCLASS=gnome-text-editor # For Wayland, this is 'org.gnome.TextEd
 # DEPLOY ALL LIBS
 wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
 chmod +x ./quick-sharun
-./quick-sharun /usr/bin/gnome-text-editor
+./quick-sharun /usr/bin/gnome-text-editor /usr/lib/lib*spell* /usr/lib/libvoikko*
 
 ## Copy help files for Help section to work
 langs=$(find /usr/share/help/*/gnome-text-editor/ -type f | awk -F'/' '{print $5}' | sort | uniq)
