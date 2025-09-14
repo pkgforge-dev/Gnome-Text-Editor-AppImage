@@ -20,7 +20,7 @@ echo "Installing the app & it's dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
 	gnome-text-editor
-echo "Install optional dependencies for 'enchant' spelling library automatically"
+echo "Installing optional dependencies for 'enchant' spelling library automatically"
 pacman -Syu --needed --noconfirm --asdeps $(expac -Ss '%o' enchant)
 
 echo "Installing debloated packages..."
@@ -29,5 +29,6 @@ wget --retry-connrefused --tries=30 "$DEBLOATED_PKGS_INSTALLER" -O ./get-debloat
 chmod +x ./get-debloated-pkgs.sh
 ./get-debloated-pkgs.sh libxml2-mini mesa-nano gtk4-mini
 
-echo "All done!"
+echo "Extracting the app version into a version file"
 echo "---------------------------------------------------------------"
+pacman -Q gnome-text-editor | awk '{print $2; exit}' > ~/version
