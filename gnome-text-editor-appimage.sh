@@ -31,9 +31,6 @@ done
 ## Copy files for theme preferences to work
 cp -vr /usr/share/gtksourceview* ./AppDir/share/
 
-## Further debloat locale
-find ./AppDir/share/locale -type f ! -name '*glib*' ! -name '*gnome-text-editor*' -delete
-
 ## Set gsettings to save to keyfile, instead to dconf
 echo "GSETTINGS_BACKEND=keyfile" >> ./AppDir/.env
 
