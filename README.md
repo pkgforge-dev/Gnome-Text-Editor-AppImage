@@ -28,3 +28,7 @@ This appimage works without fuse2 as it can use fuse3 instead, it can also work 
 </details>
 
 More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)
+
+## Known quirk
+
+- Help option only works if `gnome-help` or other similar `.page` viewer is installed on the host's system.
