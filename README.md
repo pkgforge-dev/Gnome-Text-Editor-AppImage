@@ -4,7 +4,7 @@
 [![CI Build Status](https://github.com//pkgforge-dev/Gnome-Text-Editor-AppImage/actions/workflows/blank.yml/badge.svg)](https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://gitlab.gnome.org/GNOME/gnome-text-editor/-/raw/main/data/icons/org.gnome.TextEditor.svg?ref_type=heads" />
+  <img src="https://gitlab.gnome.org/GNOME/gnome-text-editor/-/raw/main/data/icons/org.gnome.TextEditor.svg?ref_type=heads" width="128" />
 </p>
 
 * [Latest Stable Release](https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage/releases/latest)
