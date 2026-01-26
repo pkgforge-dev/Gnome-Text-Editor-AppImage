@@ -1,3 +1,5 @@
+<div align="center">
+
 # Gnome Text Editor AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Gnome-Text-Editor-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://gitlab.gnome.org/GNOME/gnome-text-editor/-/raw/main/data/icons/org.gnome.TextEditor.svg?ref_type=heads" width="128" />
 </p>
 
-* [Upstream URL](https://gitlab.gnome.org/GNOME/gnome-text-editor)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Gnome-Text-Editor-AppImage/releases/latest) | [Click here](https://gitlab.gnome.org/GNOME/gnome-text-editor) |
+
+</div>
 
 ---
 
